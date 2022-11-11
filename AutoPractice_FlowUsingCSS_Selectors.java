@@ -41,24 +41,34 @@ public class AutoPractice_FlowUsingCSS_Selectors {
 	
 	@Test(priority=3)
 	
-	public void CreateAccount() {
+	public void CreateAccount() throws Exception{
 		
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("input#email_create")).sendKeys("w_ahsan2@hotmail.com");
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("button#SubmitCreate")).click();
-		
+		Thread.sleep(3000);
 	}
 	
 	@Test(priority=4)
 	
-	public void UserCredentials() {
+	public void UserCredentials() throws Exception{
 		
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("input#id_gender1")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("input#customer_firstname")).sendKeys("Waqas");
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("input#customer_lastname")).sendKeys("Ahsan");
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("input#passwd")).sendKeys("Abcdef123@");
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("select#days")).sendKeys("1");
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("select#months")).sendKeys("January");
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("select#years")).sendKeys("1990");
+		Thread.sleep(3000);
 		//driver.findElement(By.cssSelector("button#submitAccount")).click();
 	}
 

@@ -54,7 +54,6 @@ public class Rediff_Full_Flow_Using_CSS_Selectors {
 	public void HomePage() {
 		
 		driver.findElement(By.cssSelector("a.logo+span>a:nth-child(2)>b:nth-child(1)")).click();
-		//
 	}
 
 	@AfterTest
